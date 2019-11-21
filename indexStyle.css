@@ -1,0 +1,295 @@
+h1 {
+  color: white;
+  font-size: 40px;
+  font-family: "Montserrat", serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 13%;
+  display: inline-block;
+}
+h3 {
+  font-size: 30px;
+  font-family: "Montserrat", serif;
+  margin-bottom: 12px;
+}
+p {
+  font-size: 20px;
+  font-family: "Montserrat", serif;
+  text-align: Justify;
+  margin-top: 12px;
+}
+#container {
+  margin: 40px auto;
+  height: 510px;
+  display: grid;
+  grid-template-columns: 450px 450px;
+  grid-row: auto auto;
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+  justify-content: center;
+
+}
+.grid-item {
+  padding: 0px;
+
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.header {
+  padding: 10px 0px;
+  background: #56C8D1;
+  width: 100%;
+  display: inline-block;
+  position: fixed;
+  z-index: 99;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+#content {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin-right: 10%;
+  padding: 0;
+  display: inline-block;
+  float: right;
+}
+li {
+  Display: inline;
+  float: right;
+}
+li a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Montserrat", serif;
+  transition: .25s;
+}
+li a:hover {
+  color: #111;
+  transition: .25s;
+  transition-timing-function: ease-out;
+}
+
+.footer {
+  background: #56C8D1;
+  width: 100%;
+  height: 250px;
+}
+
+#consultText {
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 40px;
+}
+
+#emailTextBox {
+  width: 300px;
+  height: 45px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(255,255,255, 0.35);
+  font-family: Montserrat, serif;
+  font-color: white;
+  text-align: center;
+  margin: 5px;
+  margin-top: 10px;
+  transition: .2s;
+  transition-timing-function: ease-out;
+}
+
+#emailTextBox:focus , #emailTextBox:hover {
+  background-color: rgba(255,255,255, .6);
+  transition: .2s;
+  transition-timing-function: ease-out;
+}
+
+#submitButton {
+  display: block;
+  margin: 2px auto;
+  width: 300px;
+  height: 45px;
+  border-radius: 8px;
+  border: none;
+  font-family: Montserrat, serif;
+  background: white;
+  color: #56C8D1;
+  font-weight: bold;
+  margin-bottom: 40px;
+  border: 2px solid white;
+  transition: .2s;
+  transition-timing-function: ease-out;
+}
+
+#submitButton:hover {
+  background-color: rgba(255,255,255, 0);
+  transition: .2s;
+  transition-timing-function: ease-out;
+  color: white;
+}
+
+#bottom {
+  background: white;
+  width: 100%;
+  height: 65px;
+}
+
+#footerTextContainer {
+  display: inline-block;
+  margin-left: 10%;
+  margin-top: 11px;
+  text-align: left;
+  width: 50vw;
+}
+
+#footerText {
+  font-size: 11px;
+  color: #56C8D1;
+}
+
+.socialButtons {
+  margin-top: 10px;
+  margin-right: 3px;
+  width: 40px;
+  transition-timing-function: ease-in;
+  transition-duration: .15s;
+}
+
+.socialButtons:hover {
+  width: 55px;
+  margin-top: 4px;
+  transition-timing-function: ease-out;
+  transition-duration: .15s;
+}
+
+#socialContainer {
+  float:right;
+  margin-right: 10%;
+}
+
+::placeholder {
+  color: white;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("files/backgroundPic.png");
+  /* background-image: url("https://cdn-images-1.medium.com/max/1200/1*mHySsKkkYV9PPEstVg56jg.png"); */
+
+  /* Set a specific height */
+  min-height: 600px;
+  height: 100%;
+  box-shadow: 0px 10px 20px -5px rgba(0,0,0,0);
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgba(50,50,50, 0.5);
+  color: white;
+  font-family: "Montserrat", serif;
+  font-size: 40px;
+  position: absolute;
+  width: 360px;
+  top: 210px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  box-shadow: 0px 10px 20px -5px rgba(0,0,0,0);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+#consultContainer {
+  background-color: rgba(86, 200, 209, 0.85);
+}
+
+#learnMoreButton {
+  margin: 190px auto;
+  width: 400px;
+  border-radius: 8px;
+  border: none;
+  font-family: Montserrat, serif;
+  background-color: #56C8D1;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px;
+  transition: .2s;
+  transition-timing-function: ease-out;
+}
+
+#learnMoreButton:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: #56C8D1;
+  transition: .2s;
+  transition-timing-function: ease-out;
+}
+
+.blur {
+
+  height: 245px;
+  width: 404px;
+  -webkit-filter: blur(6px);
+  border-style: solid;
+  border-width: 0px;
+  text-align: center;
+  top: 128px;
+  padding: 0px;
+  background: inherit;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* remove focus highlight box */
+input {
+ outline:none;
+}
+
+/* respsonsive resizing */
+@media all and (max-width: 1000px) and (min-height: 400px) {
+  #container {
+      grid-template-columns: 800px;
+      height: 1900px;
+  }
+  #container div:nth-of-type(1) {
+      order: 1;
+  }
+  #container div:nth-of-type(2) {
+      order: 2;
+  }
+  #container div:nth-of-type(3) {
+      order: 4;
+  }
+  #container div:nth-of-type(4) {
+      order: 3;
+  }
+  h3 {
+    font-size: 50px;
+    text-align: center !important;
+  }
+  p {
+    font-size: 40px;
+  }
+  .footer {
+    height: 280px;
+  }
+}
