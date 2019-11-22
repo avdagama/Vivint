@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+  <head lang="en">
     <title>Vivint</title>
     <meta charset="UTF-8">
     <meta name="description" content="At Vivint we pride ourselves on providing the best customer service experience.">
@@ -11,41 +11,46 @@
     <link rel="stylesheet" type="text/css" href="indexStyle.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <div class="header" id="myHeader">
-      <h1>Vivint</h1>
-      <ul>
-        <li><a>&#9742 1-800-MYVIVINT</a></li>
-        <li><a href="contact.html">Contact</a></li>
+
+  <header class="header">
+    <a href="" class="logo">Vivint</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="index.html" style="color: #dddddd;">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tel:123-456-7890">1-800-MYVIVINT</a></li>
       </ul>
-    </div>
+  </header>
+
+  <body>
     <div id="content">
         <div class="parallax">
             <div class="blur"></div>
         </div>
-          <h3 class="bg-text" style="height: 200px;">no waiting.<br> no automation.<br> no ads.<br>that's Vivint!</h3>
+          <h3 class="bg-text" style="height: 160px;">no waiting.<br> no automation.<br> no ads.<br>that's Vivint!</h3>
         <div class="first">
           <input id="learnMoreButton" class="bg-text" onclick="smoothScroll(document.getElementById('second'))" type="button" value="Learn more">
         </div>
       <div id="second"></div>
       <div id="container">
         <div class="grid-item">
-          <h3>Real Customer Service</h3>
+          <h3 id="headline1">Real Customer Service</h3>
           <p>At Vivint, we believe that robots have no place in customer service. That's why your call will always be answered by a real person, everytime.</p>
         </div>
         <div class="grid-item"><img src="files\indexPic1.png" alt="Customer Service Pic1" width=100%></div>
-        <div class="grid-item"><img src="files\indexPic2.jpg" alt="Customer Service Pic2" width=100%></div>
         <div class="grid-item">
-          <h3 style="text-align:Right">Custom Trailored Solutions</h3>
+          <h3 id="headline2">Custom Trailored Solutions</h3>
           <p> Whether you're a lone entrepreneur or a large corporation, we've got you covered. Our scalable and flexible solutions ensure that we're always able to adjust to your business's needs.
             </p>
         </div>
+        <div class="grid-item"><img src="files\indexPic2.jpg" alt="Customer Service Pic2" width=100%></div>
       </div>
     </div>
+
     <footer class="footer">
-      <div class="parallax" style="min-height: 0px;">
+      <div class="parallax" style="min-height: 0px; height: auto;">
       <div id="consultContainer">
         <h3 id="consultText">Request A Consultation. It's Free!</h3>
         <form Style="text-align: center;">
@@ -57,17 +62,18 @@
       </div>
       </div>
       <div id="bottom">
-        <div id="footerTextContainer">
-          <p id="footerText">Vivint © 2009 - 2019. Website Made By Alex DaGama. Marlin Bookworks 379-B Third Street #542 San Rofael, CA 96383</p>
-        </div>
         <div id="socialContainer">
           <img src="files\iconmonstr-facebook-4-64.png" alt="facebook" class="socialButtons">
           <img src="files\iconmonstr-twitter-4-64.png" alt="twitter" class="socialButtons">
           <img src="files\iconmonstr-linkedin-4-64.png" alt="linkedin" class="socialButtons">
         </div>
+        <div id="footerTextContainer">
+          <p id="footerText">Vivint © 2009 - 2019. Website Made By Alex DaGama. Marlin Bookworks 379-B Third Street #542 San Rofael, CA 96383</p>
+        </div>
       </div>
     </footer>
-    <script type="text/javascript" src="stickyHeader.js"></script>
+
     <script type="text/javascript" src="autoScroll.js"></script>
+
   </body>
 </html>
