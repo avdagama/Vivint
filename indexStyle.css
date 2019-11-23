@@ -46,8 +46,12 @@ a {
   font-size: 2em;
   padding: 10px 20px;
   text-decoration: none;
-  margin-left:5%;
   font-family: "Montserrat", serif;
+
+
+  left: 50%;
+  margin-left: -65px !important;
+  position: relative;
 }
 
 /* menu */
@@ -255,6 +259,7 @@ body {
   border: 2px solid white;
   transition: .2s;
   transition-timing-function: ease-out;
+  -webkit-appearance: none;
 }
 
 #submitButton:hover {
@@ -319,10 +324,11 @@ body {
   box-shadow: 0px 10px 20px -5px rgba(0,0,0,0);
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+
+  background-position: top;
+  background-size: 300%;
+  background-attachment: local;
 }
 
 /* Position text in the middle of the page/image */
@@ -344,7 +350,7 @@ body {
 }
 
 #consultContainer {
-  background-color: rgba(36, 178, 189, 0.85);
+  background-color: rgba(36, 178, 189, 1);
 }
 
 #learnMoreButton {
@@ -360,6 +366,7 @@ body {
   padding: 12px;
   transition: .2s;
   transition-timing-function: ease-out;
+  -webkit-appearance: none;
 }
 
 #learnMoreButton:hover {
@@ -395,7 +402,15 @@ input {
 /*Responsive Resizing*/
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
+@media only screen and (max-width: 600px) {
+  .parallax {
+
+
+
+
+
+  }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {...}
@@ -416,20 +431,23 @@ input {
   }
   .parallax {
     background-image: url("files/backgroundPic.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
   }
   #container {
     grid-template-columns: 45% 45%;
-    margin-top: 6%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 12%;
+    margin-top: 50px;
+    margin-left: calc(-95px + 18vw);
+    margin-right: calc(-95px + 18vw);
+    margin-bottom: 112px;
     grid-row-gap: 15%;
   }
   h3 {
-    font-size: 2.2vw;
+    font-size: calc(14px + 0.5vw)
   }
   p {
-    font-size: 1.6vw;
+    font-size: calc(10px + 0.5vw);
   }
   #headline1 {
     text-align: left;
@@ -437,24 +455,18 @@ input {
   #headline2 {
     text-align: right;
   }
+  #consultContainer {
+    background-color: rgba(36, 178, 189, 0.85);
+  }
+  .header .logo {
+    left: 0%;
+    margin-left: 5% !important;
+  }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  #container {
-    grid-template-columns: 40% 40%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-    margin-bottom: 10%;
-  }
-  h3 {
-    font-size: 1.8vw;
-  }
-  p {
-    font-size: 1.3vw;
-  }
-}
+@media only screen and (min-width: 992px) {...}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
