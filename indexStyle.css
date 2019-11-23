@@ -315,7 +315,7 @@ body {
 
 .parallax {
   /* The image used */
-  background-image: url("files/vivintBackgroundSmall.jpg");
+  background-image: url("files/vivintBackgroundSmall2.jpeg");
   /* background-image: url("https://cdn-images-1.medium.com/max/1200/1*mHySsKkkYV9PPEstVg56jg.png"); */
 
   /* Set a specific height */
@@ -325,9 +325,9 @@ body {
 
   /* Create the parallax scrolling effect */
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain 300%;
 }
 
 /* Position text in the middle of the page/image */
@@ -356,7 +356,7 @@ body {
 }
 
 #learnMoreButton {
-  margin: 160px auto;
+  margin: 170px auto;
   width: 300px;
   border-radius: 8px;
   border: none;
@@ -434,6 +434,7 @@ input {
   }
   .parallax {
     background-image: url("files/backgroundPic.png");
+    background-size: cover;
   }
   #container {
     grid-template-columns: 45% 45%;
@@ -470,6 +471,9 @@ input {
 
   .bg-text {
     font-size: 200%;
+  }
+  #learnMoreButton {
+    margin: 160px auto;
   }
 
 }
