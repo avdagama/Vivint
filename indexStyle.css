@@ -325,10 +325,9 @@ body {
 
   /* Create the parallax scrolling effect */
   background-repeat: no-repeat;
-
-  background-position: top;
-  background-size: 300%;
-  background-attachment: local;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* Position text in the middle of the page/image */
@@ -336,7 +335,7 @@ body {
   background-color: rgba(50,50,50, 0.5);
   color: white;
   font-family: "Montserrat", serif;
-  font-size: 180%;
+  font-size: 200%;
   position: absolute;
   width: 260px;
   top: 200px;
@@ -378,10 +377,11 @@ body {
 
 .blur {
 
-  height: 195px;
-  width: 294px;
-  top: 134px;
+  height: 197px;
+  width: 296px;
+  top: 132px;
   -webkit-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-style: solid;
   border-width: 0px;
   border-radius: 8px;
@@ -432,9 +432,6 @@ input {
   }
   .parallax {
     background-image: url("files/backgroundPic.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
   }
   #container {
     grid-template-columns: 45% 45%;
