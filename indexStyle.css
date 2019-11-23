@@ -336,7 +336,7 @@ body {
   background-color: rgba(50,50,50, 0.5);
   color: white;
   font-family: "Montserrat", serif;
-  font-size: 200%;
+  font-size: 180%;
   position: absolute;
   width: 260px;
   top: 200px;
@@ -378,14 +378,14 @@ body {
 
 .blur {
 
-  height: 202px;
-  width: 300px;
+  height: 192px;
+  width: 290px;
+  top: 134px;
   -webkit-filter: blur(6px);
   border-style: solid;
   border-width: 0px;
   border-radius: 8px;
   text-align: center;
-  top: 132px;
   padding: 0px;
   background: inherit;
   position: relative;
@@ -461,6 +461,15 @@ input {
   .header .logo {
     left: 0%;
     margin-left: 5% !important;
+  }
+  .blur {
+    height: 202px;
+    width: 300px;
+    top: 132px;
+  }
+
+  .bg-text {
+    font-size: 200%;
   }
 
 }
