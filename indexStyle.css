@@ -337,14 +337,17 @@ body {
   font-family: "Montserrat", serif;
   font-size: 200%;
   position: absolute;
-  width: 260px;
+  width: 280px;
   top: 200px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   box-shadow: 0px 10px 20px -5px rgba(0,0,0,0);
   border-radius: 8px;
-  padding: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -377,7 +380,7 @@ body {
 
 .blur {
 
-  height: 197px;
+  height: 200px;
   width: 296px;
   top: 132px;
   -webkit-filter: blur(6px);
@@ -391,7 +394,6 @@ body {
   position: relative;
   margin: 0 auto;
   overflow:hidden;
-  border-radius: 12px;
   z-index: 1;
 }
 
