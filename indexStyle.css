@@ -40,11 +40,6 @@ a {
   background-color: #19A0AB;
 }
 
-.header li a:hover {
-  transition-duration: .2s;
-  transition-timing-function: ease-out;
-}
-
 .header .logo {
   display: block;
   float: left;
