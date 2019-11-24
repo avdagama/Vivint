@@ -38,6 +38,8 @@ a {
 .header li a:hover,
 .header .menu-btn:hover {
   background-color: #19A0AB;
+  transition-duration: .2s;
+  transition-timing-function: ease-out;
 }
 
 .header .logo {
@@ -298,12 +300,11 @@ body {
   transition-duration: .15s;
 }
 
-/*.socialButtons:hover {
-  width: 55px;
-  margin-top: 4px;
+.socialButtons:hover {
+  filter: brightness(60%);
   transition-timing-function: ease-out;
   transition-duration: .15s;
-} */
+}
 
 #socialContainer {
   float: center;
@@ -356,7 +357,7 @@ body {
 }
 
 #learnMoreButton {
-  margin: 170px auto;
+  margin: 165px auto;
   width: 300px;
   border-radius: 8px;
   border: none;
