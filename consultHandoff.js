@@ -17,3 +17,10 @@ if (query.email==undefined) {}
 else  {
   document.getElementById("emailInput").value = query.email;
 }
+
+function submitPressed() {
+  document.getElementById("name").value = "";
+  document.getElementById("emailInput").value = "";
+  document.getElementById("message").value = "";
+  document.getElementById("submit").value = "Sent!";
+}

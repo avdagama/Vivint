@@ -400,6 +400,10 @@ input {
  outline:none;
 }
 
+img {
+  border-radius: 8px;
+}
+
 
 /* ABOUT page additions */
 h1 {

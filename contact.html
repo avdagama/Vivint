@@ -13,7 +13,7 @@
   </head>
 
   <header class="header">
-    <a href="" class="logo">Vivint</a>
+    <a href="index.html" class="logo">Vivint</a>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
@@ -46,8 +46,8 @@
               <option value="other">Other</option>
             </select>
             <label for="message"><br><br>Message</label>
-            <textarea type="text" name="Text1" cols="40" rows="5"></textarea>
-            <input type="submit" value="Submit">
+            <textarea type="text" id="message" name="Text1" cols="40" rows="5"></textarea>
+            <input type="submit" value="Submit" id="submit" onclick="submitPressed()">
           </form>
 
         </div>
@@ -55,16 +55,16 @@
           <div class="myself">
             <div class="property">Phone:</div><div class="value">1-800-MYVIVINT</div>
             <div class="property">Email:</div><div class="value">sales@vivint.com</div>
-            <div class="property">Address:</div><div class="value">379-B Third Street #542 San Rofael, CA</div>
+            <div class="property">Address:</div><div class="value">379-B Third Street, San Rofael, CA</div>
           </div>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.318838714697!2d-122.51961028395203!3d37.96968787972429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808599f57ea84237%3A0x22396148fccd4d82!2s379%203rd%20St%20%23542%2C%20San%20Rafael%2C%20CA%2094901!5e0!3m2!1sen!2sus!4v1574632574031!5m2!1sen!2sus"
-          width="100%" height="72%" frameborder="0" style="border:0; margin-top: 20px; border-radius: 16px;" allowfullscreen=""></iframe>
+          width="100%" height="78%" frameborder="0" style="border:0; margin-top: 20px; border-radius: 16px;" allowfullscreen=""></iframe>
         </div>
         <div class="grid-item">
           <h3 id="headline2">We'd Love To Hear From You!</h3>
           <p>We're available 24/7 to answer any questions you may have. Whether you have questions, concerns, or would like a consultation, our dedicated customer service team is here to help!</p>
         </div>
-        <div class="grid-item"><img src="files\indexPic2.jpg" alt="Customer Service Pic2" width=100%></div>
+        <div class="grid-item"><img src="files\contactPic.jpg" alt="Customer Service Pic2" width=100%></div>
       </div>
     </div>
 
@@ -75,7 +75,7 @@
         <form Style="text-align: center;" action="contact.html" method="GET">
           <input type="text" name="email" for="email" placeholder="name@company.com" id="emailTextBox">
         <div Style="padding: 10px;">
-          <input type="submit" value="Submit" id="submitButton">
+          <input type="submit" value="Continue" id="submitButton">
         </div>
         </form>
       </div>
