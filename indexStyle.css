@@ -479,6 +479,10 @@ input[type=submit]:hover {
   font-family: "Montserrat", serif;
   }
 
+  .myself {
+    margin-top: 20px;
+  }
+
 
 /*Responsive Resizing*/
 
@@ -578,6 +582,9 @@ input[type=submit]:hover {
   }
   #contactFooter {
     margin-top: 150px;
+  }
+  .myself {
+    margin-top: 0px;
   }
 
 }

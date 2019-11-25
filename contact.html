@@ -38,7 +38,7 @@
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name..">
             <label for="email"><br><br>Email</label>
-            <input type="text" id="email" name="email" placeholder="Your email..">
+            <input type="text" id="emailInput" name="email" placeholder="Your email..">
             <label for="reason"><br><br>Reason</label>
             <select id="reason" name="reason">
               <option value="consultation">Request a consultation</option>
@@ -72,12 +72,12 @@
       <div class="parallax" style="min-height: 0px; height: auto;">
       <div id="consultContainer">
         <h3 id="consultText">Request A Consultation. It's Free!</h3>
-        <form Style="text-align: center;">
+        <form Style="text-align: center;" action="contact.html" method="GET">
           <input type="text" name="email" for="email" placeholder="name@company.com" id="emailTextBox">
-        </form>
         <div Style="padding: 10px;">
-          <input type="button" value="Submit" id="submitButton">
+          <input type="submit" value="Submit" id="submitButton">
         </div>
+        </form>
       </div>
       </div>
       <div id="bottom">
@@ -92,7 +92,7 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="autoScroll.js"></script>
+    <script src="consultHandoff.js"></script>
 
   </body>
 </html>
