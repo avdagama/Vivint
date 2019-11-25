@@ -513,7 +513,7 @@ input[type=submit]:hover {
     margin-top: 50px;
     margin-left: calc(-95px + 18vw);
     margin-right: calc(-95px + 18vw);
-    margin-bottom: 180px;
+    margin-bottom: 120px;
     grid-row-gap: 15%;
   }
   h3 {
@@ -552,7 +552,7 @@ input[type=submit]:hover {
     height: 180px;
   }
   #contactForm {
-    margin-top: -25px;
+    margin-top: -2px;
     background-color: #24B2BD;
     padding: 20px;
     border-radius: 12px;
@@ -575,6 +575,9 @@ input[type=submit]:hover {
     background-color: rgba(255,255,255, 0);
     color: white;
     transition-duration: .2s;
+  }
+  #contactFooter {
+    margin-top: 150px;
   }
 
 }
