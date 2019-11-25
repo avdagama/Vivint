@@ -400,21 +400,95 @@ input {
  outline:none;
 }
 
+
+/* ABOUT page additions */
+h1 {
+  margin-top: 100px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+#aboutParallax {
+  min-height: 20px;
+  height: 180px;
+  line-height: 200px;
+  text-align: center;
+}
+#opacityContainer {
+  background-color: rgba(30, 160, 170, 1);
+  height: 180px;
+}
+
+/* CONTACT page additon */
+/* Style inputs */
+  input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  width: 100%;
+  background-color: #24B2BD;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Montserrat", serif;
+  -webkit-appearance: none;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+label {
+  font-family: "Montserrat", serif;
+}
+
+/* Add a background color to the submit button on mouse-over */
+input[type=submit]:hover {
+  background-color: #45a049;
+  background-color: rgba(30, 160, 170, 1);
+}
+
+.myself .property{
+  width: 15%;
+  display:inline-block;
+  box-sizing:border-box;
+  text-align:right;
+  font-family: "Montserrat", serif;
+  margin-bottom: 20px;
+  margin-left: 5%;
+
+  }
+
+
+.myself .value{
+  text-align:left;
+  padding-left:40px;
+  width:80%;
+  display:inline-block;
+  box-sizing:border-box;
+  font-family: "Montserrat", serif;
+  }
+
+
 /*Responsive Resizing*/
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .parallax {
-
-
-
-
-
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -439,7 +513,7 @@ input {
     margin-top: 50px;
     margin-left: calc(-95px + 18vw);
     margin-right: calc(-95px + 18vw);
-    margin-bottom: 112px;
+    margin-bottom: 140px;
     grid-row-gap: 15%;
   }
   h3 {
@@ -455,7 +529,7 @@ input {
     text-align: right;
   }
   #consultContainer {
-    background-color: rgba(36, 178, 189, 0.85);
+    background-color: rgba(13, 117, 124, 0.85);
   }
   .header .logo {
     left: 0%;
@@ -473,11 +547,41 @@ input {
   #learnMoreButton {
     margin: 160px auto;
   }
+  #opacityContainer {
+    background-color: rgba(13, 117, 124, 0.85);
+    height: 180px;
+  }
+  #contactForm {
+    margin-top: -25px;
+    background-color: #24B2BD;
+    padding: 20px;
+    border-radius: 12px;
+    padding-top: 0px;
+    margin-bottom: -40px;
+  }
+  label {
+    color: white;
+  }
+  input[type=submit] {
+    background-color: white;
+    color: #24B2BD;
+    -webkit-appearance: none;
+    border: 3px solid white;
+  }
+  input[type=text], select, textarea {
+    border: none;
+  }
+  input[type=submit]:hover {
+    background-color: rgba(255,255,255, 0);
+    color: white;
+    transition-duration: .2s;
+  }
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {

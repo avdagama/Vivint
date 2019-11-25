@@ -1,170 +1,98 @@
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-<style>
-  h1 {
-    color: white;
-    font-size: 40px;
-    font-family: "Montserrat", serif;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 13%;
-    display: inline-block;
-  }
-  h3 {
-    font-size: 40px;
-    font-family: "Montserrat", serif;
-    margin-bottom: 12px;
-  }
-  p {
-    font-size: 25px;
-    font-family: "Montserrat", serif;
-    text-align: Justify;
-    margin-top: 12px;
-  }
-  .container {
-    margin: 20px auto;
-    height: 700px;
-    display: grid;
-    grid-template-columns: 500px 500px;
-    grid-row: auto auto;
-    grid-column-gap: 50px;
-    grid-row-gap: 40px;
-    justify-content: center;
-
-  }
-  .grid-item {
-    padding: 10px;
-    margin: 0;
-
-
-  }
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  .header {
-    padding: 10px 0px;
-    background: #56C8D1;
-    width: 100%;
-    display: inline-block;
-  }
-  .sticky + .content {
-    padding-top: 84px;
-  }
-  .content {
-    padding: 16px;
-  }
-  body {
-    margin: 0;
-  }
-  ul {
-    list-style-type: none;
-    margin-right: 10%;
-    padding: 0;
-    display: inline-block;
-    float: right;
-  }
-  li {
-    Display: inline;
-    float: right;
-  }
-  li a {
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: "Montserrat", serif;
-  }
-  li a:hover {
-    color: #111;
-  }
-  .footer {
-    background: #56C8D1;
-    position: absolute;
-    width: 100%;
-    height: 250px;
-  }
-  ::placeholder {
-    color: white;
-    opacity: .8;
-}
-
-
-</style>
-<html>
+<html lang="en">
   <head>
-    <title>Alex's Website</title>
+    <title>Vivint</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="At Vivint we pride ourselves on providing the best customer service experience.">
+    <meta name="keywords" content="customer, service, vivint">
+    <meta name="author" content="Vivint">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="files/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="indexStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <div class="header" id="myHeader">
-      <h1>Vivint</h1>
 
-      <ul>
-        <li><a href="default.asp">&#9742 1-800-MYVIVINT</a></li>
-        <li><a href="contact.html" style="color: #dddddd";>Contact</a></li>
-        <li><a href="about.html">About</a></li>
+  <header class="header">
+    <a href="" class="logo">Vivint</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
         <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tel:123-456-7890">1-800-MYVIVINT</a></li>
       </ul>
-    </div>
-    <div class ="content">
-      <div class="container">
-        <div class="grid-item">
-          <h3>What We Do</h3>
-          <p>Vivint is a national chain that supports businesses in their
-            goals to provide exceptional customer service to their customers.</p>
+  </header>
+
+  <body>
+    <div id="content">
+        <div id="aboutParallax" class="parallax">
+          <div id=opacityContainer>
+          <h1 id="pageHeadline">Contact Vivint</h1>
+          </div>
         </div>
-
-        <div class="grid-item"><img src="https://c1.sfdcstatic.com/content/dam/blogs/ca/Blog%20Posts/Every-Task-a-Customer-Service-Rep-Must-Do-opengraph.png" width=500px></div>
-
-        <div class="grid-item"><img src="http://www.brcallcenter.com/wp-content/uploads/2018/10/empresa-de-servicos-de-telemarketing-ativo.jpeg" width=500px></div>
-
+      <div id="container">
         <div class="grid-item">
-          <h3 style="text-align:Right">The Vivint Difference</h3>
-          <p> At Vivnint, we provide more than excpetional customer service.
-          We provide the foundation for customer engagement and interaction to
-          ensure long-term success.
-            </p>
+
+          <form id="contactForm" action="/action_page.php"><br>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
+            <label for="email"><br><br>Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+            <label for="reason"><br><br>Reason</label>
+            <select id="reason" name="reason">
+              <option value="consultation">Request a consultation</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+            <label for="message"><br><br>Message</label>
+            <textarea type="text" name="Text1" cols="40" rows="5"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+
         </div>
+        <div class="grid-item">
+          <div class="myself">
+            <div class="property">Phone:</div><div class="value">1-800-MYVIVINT</div>
+            <div class="property">Email:</div><div class="value">sales@vivint.com</div>
+            <div class="property">Address:</div><div class="value">379-B Third Street #542 San Rofael, CA</div>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.318838714697!2d-122.51961028395203!3d37.96968787972429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808599f57ea84237%3A0x22396148fccd4d82!2s379%203rd%20St%20%23542%2C%20San%20Rafael%2C%20CA%2094901!5e0!3m2!1sen!2sus!4v1574632574031!5m2!1sen!2sus"
+          width="100%" height="72%" frameborder="0" style="border:0; margin-top: 20px; border-radius: 16px;" allowfullscreen=""></iframe>
+        </div>
+        <div class="grid-item">
+          <h3 id="headline2">We'd Love To Hear From You!</h3>
+          <p>We're available 24/7 to answer any questions you may have. Whether you have questions, concerns, or would like a consultation, our dedicated customer service team is here to help!</p>
+        </div>
+        <div class="grid-item"><img src="files\indexPic2.jpg" alt="Customer Service Pic2" width=100%></div>
       </div>
     </div>
+
     <footer class="footer">
-      <div class"consultation">
-        <h3 Style="color: white; text-align: center; margin-top: 30px;">Request A Consultation. It's Free!</h3>
+      <div class="parallax" style="min-height: 0px; height: auto;">
+      <div id="consultContainer">
+        <h3 id="consultText">Request A Consultation. It's Free!</h3>
         <form Style="text-align: center;">
-          <input type="text" name="firstname" placeholder="name@company.com" Style="width: 300px; height: 45px; border-radius: 8px; border: none;
-            background-color: rgba(255,255,255, 0.25); font-family: Montserrat, serif; font-color: white; text-align: center; margin: 5px;">
+          <input type="text" name="email" for="email" placeholder="name@company.com" id="emailTextBox">
         </form>
         <div Style="padding: 10px;">
-          <input type="button" value="Submit" style="display: block; margin: 2px auto; width: 300px; height: 45px;
-            border-radius: 8px; border: none; font-family: Montserrat, serif; background: white; color: #56C8D1; font-weight: bold;">
+          <input type="button" value="Submit" id="submitButton">
         </div>
       </div>
-      <div class="bottom" Style="background: white; width: 100%; height: 70px; margin-top: 40px;">
-        <div style="display: inline-block; margin-left: 10%; margin-top: 11px;">
-          <p style="font-size: 11px; color: #56C8D1;">Copyright Vivint © 2009 - 2019. Website Made By Alex DaGama. Marlin Bookworks 379-B Third Street #542 San Rofael, CA 98383</p>
-        </div>
-        <span style="float:right; margin-right: 10%;">
-          <img src="files\iconmonstr-facebook-4-64.png" width=40px style="margin-top: 10px; margin-right: 3px;">
-          <img src="files\iconmonstr-twitter-4-64.png" width=40px style="margin-top: 10px; margin-right: 3px;">
-          <img src="files\iconmonstr-linkedin-4-64.png" width=40px style="margin-top: 10px; margin-right: 3px;">
-        </span>
       </div>
-
+      <div id="bottom">
+        <div id="socialContainer">
+          <img src="files\iconmonstr-facebook-4-64.png" alt="facebook" class="socialButtons">
+          <img src="files\iconmonstr-twitter-4-64.png" alt="twitter" class="socialButtons">
+          <img src="files\iconmonstr-linkedin-4-64.png" alt="linkedin" class="socialButtons">
+        </div>
+        <div id="footerTextContainer">
+          <p id="footerText">Vivint Customer Service © 2009 - 2019. Website Made By Alex DaGama. 379-B Third Street #542 San Rofael, CA 96383</p>
+        </div>
+      </div>
     </footer>
-    <script>
-      window.onscroll = function() {myFunction()};
 
-      var header = document.getElementById("myHeader");
-      var sticky = header.offsetTop;
+    <script type="text/javascript" src="autoScroll.js"></script>
 
-      function myFunction() {
-        if (window.pageYOffset > sticky) {
-          header.classList.add("sticky");
-        } else {
-          header.classList.remove("sticky");
-        }
-      }
-    </script>
   </body>
 </html>
