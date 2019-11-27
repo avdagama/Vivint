@@ -8,8 +8,6 @@ a {
   color: #FFF;
 }
 
-/* header */
-
 .header {
   background-color: #24B2BD;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
@@ -38,6 +36,8 @@ a {
 .header li a:hover,
 .header .menu-btn:hover {
   background-color: #19A0AB;
+  transition-duration: .15s;
+  transition-timing-function: ease-out;
 }
 
 .header .logo {
@@ -54,15 +54,11 @@ a {
   position: relative;
 }
 
-/* menu */
-
 .header .menu {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
 }
-
-/* menu icon */
 
 .header .menu-icon {
   cursor: pointer;
@@ -101,8 +97,6 @@ a {
   top: -5px;
 }
 
-/* menu btn */
-
 .header .menu-btn {
   display: none;
 }
@@ -128,7 +122,7 @@ a {
   top: 0;
 }
 
-/* 48em = 768px */
+/* iPad = 768px */
 
 @media (min-width: 769px) {
   .header li {
@@ -313,22 +307,18 @@ body {
 }
 
 .parallax {
-  /* The image used */
   background-image: url("files/vivintBackgroundSmall2.jpeg");
   /* background-image: url("https://cdn-images-1.medium.com/max/1200/1*mHySsKkkYV9PPEstVg56jg.png"); */
 
-  /* Set a specific height */
   min-height: 500px;
   height: 80%;
   box-shadow: 0px 10px 20px -5px rgba(0,0,0,0);
 
-  /* Create the parallax scrolling effect */
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
 }
 
-/* Position text in the middle of the page/image */
 .bg-text {
   background-color: rgba(50,50,50, 0.5);
   color: white;
@@ -395,7 +385,6 @@ body {
   z-index: 1;
 }
 
-/* remove focus highlight box */
 input {
  outline:none;
 }
@@ -424,7 +413,6 @@ h1 {
 }
 
 /* CONTACT page additon */
-/* Style inputs */
   input[type=text], select, textarea {
   width: 100%;
   padding: 12px 20px;
@@ -436,7 +424,6 @@ h1 {
   font-family: "Montserrat", serif;
 }
 
-/* Style the submit button */
 input[type=submit] {
   width: 100%;
   background-color: #24B2BD;
@@ -512,6 +499,12 @@ input[type=submit]:hover {
   #container div:nth-of-type(4) {
       order: 3;
   }
+  #container div:nth-of-type(5) {
+      order: 5;
+  }
+  #container div:nth-of-type(6) {
+      order: 6;
+  }
   .parallax {
     background-image: url("files/backgroundPic.png");
     background-size: cover;
@@ -521,8 +514,9 @@ input[type=submit]:hover {
     margin-top: 50px;
     margin-left: calc(-95px + 18vw);
     margin-right: calc(-95px + 18vw);
-    margin-bottom: 120px;
-    grid-row-gap: 15%;
+    margin-bottom: 50px;
+    grid-row-gap: 50px;
+
   }
   h3 {
     font-size: calc(14px + 0.5vw)
@@ -565,7 +559,7 @@ input[type=submit]:hover {
     padding: 20px;
     border-radius: 12px;
     padding-top: 0px;
-    margin-bottom: -40px;
+    height: 485px;
   }
   label {
     color: white;
@@ -584,9 +578,6 @@ input[type=submit]:hover {
     color: white;
     transition-duration: .2s;
   }
-  #contactFooter {
-    margin-top: 150px;
-  }
   .myself {
     margin-top: 0px;
   }
@@ -604,7 +595,7 @@ input[type=submit]:hover {
     margin-right: auto;
     margin-left: auto;
     margin-top: 50px;
-    margin-bottom: 110px;
+    margin-bottom: 55px;
   }
   h3 {
     font-size: 25px;
