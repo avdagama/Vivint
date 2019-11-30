@@ -34,20 +34,20 @@
       <div id="container">
         <div class="grid-item">
 
-          <form id="contactForm"><br>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name..">
-            <label for="email"><br><br>Email</label>
-            <input type="text" id="emailInput" name="email" placeholder="Your email..">
+          <form id="contactForm" action="contact.html" method="POST"><br>
+            <label for="name" id="nameLabel">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name.." required>
+            <label for="email" id="emailLabel"><br><br>Email</label>
+            <input type="text" id="emailInput" name="email" placeholder="Your email.." required>
             <label for="reason"><br><br>Reason</label>
             <select id="reason" name="reason">
               <option value="consultation">Request a consultation</option>
               <option value="feedback">Feedback</option>
               <option value="other">Other</option>
             </select>
-            <label for="message"><br><br>Message</label>
-            <textarea type="text" id="message" name="Text1" cols="40" rows="5"></textarea>
-            <input type="submit" value="Submit" id="submit" onclick="submitPressed()">
+            <label for="message" id="message"><br><br>Message</label>
+            <textarea type="text" id="message" name="Text1" cols="40" rows="5" required></textarea>
+            <input type="submit" value="Submit" id="submit">
           </form>
 
         </div>
