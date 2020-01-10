@@ -222,7 +222,7 @@ body {
   border: none;
   background-color: rgba(255,255,255, 0.35);
   font-family: Montserrat, serif;
-  font-color: white;
+  color: white;
   text-align: center;
   margin: 5px;
   margin-top: 10px;
@@ -413,7 +413,7 @@ h1 {
 }
 
 /* CONTACT page additon */
-  input[type=text], select, textarea {
+  input, select, textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -554,9 +554,8 @@ input[type=submit]:hover {
   #contactForm {
     margin-top: -2px;
     background-color: #24B2BD;
-    padding: 20px;
+    padding: 0px 20px 10px 20px;
     border-radius: 12px;
-    padding-top: 0px;
     height: 485px;
   }
   label {
@@ -568,7 +567,7 @@ input[type=submit]:hover {
     -webkit-appearance: none;
     border: 3px solid white;
   }
-  input[type=text], select, textarea {
+  input, select, textarea {
     border: none;
   }
   input[type=submit]:hover {
